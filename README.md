@@ -4,6 +4,7 @@
 ## 数组
 - [知识与导航]
 - [二分查找](https://github.com/RossVermouth/algorithm/blob/main/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
+- [移除元素](https://github.com/RossVermouth/algorithm/blob/main/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.md)
 
 ## 链表
 
