@@ -3,7 +3,7 @@
 
 ## 数组
 - [知识与导航]
-- [数组中重复的数字](3.%20数组中重复的数字.md)
+- [二分查找](https://github.com/RossVermouth/algorithm/blob/main/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
 
 ## 链表
 
