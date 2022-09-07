@@ -1,0 +1,57 @@
+## 题目链接
+
+[leetcode 54](https://leetcode.cn/problems/spiral-matrix/)
+
+## 题目描述
+
+给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
+
+```html
+输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
+输出：[1,2,3,6,9,8,7,4,5]
+
+输入：matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+输出：[1,2,3,4,8,12,11,10,9,5,6,7]
+```
+
+## 解题思路
+
+顺时针搜索矩阵等价于**递归顺时针搜索外圈**
+以左上角点和右下角点的坐标控制一圈的搜索范围且每一圈按照左->右、 上->下、 右->左、 下->上的顺序进行搜索  
+额外需要注意一行 &/| 一列的边界case，当只有一行时只需要左->右而不需要右->左，当只有一列时只需要上->下而不需要下->上
+实现时建议从定义清晰的api入手，再完善调用方法
+
+```JAVA
+class Solution {
+    // O(mn) O(1)
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> res = new ArrayList<>();
+        search(matrix, 0, 0, matrix.length - 1, matrix[0].length - 1, res);
+        return res;
+    }
+
+    // 在矩阵matrix的(leftX, left)和(rightX, rightY)范围内按顺时针list
+    private void search(int[][] matrix, int leftX, int leftY, int rightX, int rightY, List<Integer> list) {
+        if (leftX > rightX || leftY > rightY) {
+            return;
+        }
+        for (int j = leftY; j <= rightY; j++) {
+            list.add(matrix[leftX][j]);
+        }
+        for (int i = leftX + 1; i <= rightX; i++) {
+            list.add(matrix[i][rightY]);
+        }
+        if (leftX != rightX) {
+            for (int j = rightY - 1; j >= leftY; j--) {
+                list.add(matrix[rightX][j]);
+            }
+        }
+        if (leftY != rightY) {
+            for (int i = rightX - 1; i >= leftX + 1; i--) {
+                list.add(matrix[i][leftY]);
+            }
+        }
+        search(matrix, leftX + 1, leftY + 1, rightX - 1, rightY - 1, list);
+    } 
+}
+```
