@@ -32,15 +32,6 @@
 
 ```JAVA
 class Solution {
-    // // 迭代法 O(logn) O(1)
-    // public int search(int[] nums, int target) {
-    //     if (nums == null || nums.length == 0) {
-    //         return -1;
-    //     }
-    //     int left = 0, right = nums.length - 1;
-    //     // 在[left, right]区间查找
-    //     while (left <= right) {
-    //         int mid = left + ((right - left) class Solution {
     // nums不重复且有序
     // // 迭代法 O(logn) O(1)
     // public int search(int[] nums, int target) {
@@ -51,42 +42,6 @@ class Solution {
     //     // 在[left, right]区间查找
     //     while (left <= right) {
     //         int mid = left + ((right - left) >> 1);
-    //         if (nums[mid] < target) {
-    //             left = mid + 1;
-    //         } else if (nums[mid] > target) {
-    //             right = mid - 1;
-    //         } else {
-    //             return mid;
-    //         }
-    //     }
-    //     return -1;
-    // }
-
-    // 递归法 O(logn) O(1)
-    public int search(int[] nums, int target) {
-        if (nums == null || nums.length == 0) {
-            return -1;
-        }
-        return search(nums, 0, nums.length - 1, target);
-    }
-
-    private int search(int[] nums, int L, int R, int target) {
-        if (L > R) {
-            return -1;
-        }
-        if (L == R) {
-            return nums[L] == target ? L : -1;
-        }
-        int mid = L + ((R - L) >> 1);
-        if (nums[mid] < target) {
-            return search(nums, mid + 1, R, target);
-        }
-        if (nums[mid] > target) {
-            return search(nums, L, mid - 1, target);
-        }
-        return mid;
-    }
-}>> 1);
     //         if (nums[mid] < target) {
     //             left = mid + 1;
     //         } else if (nums[mid] > target) {
