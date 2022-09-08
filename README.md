@@ -15,6 +15,7 @@
 - [螺旋矩阵1](https://github.com/RossVermouth/algorithm/blob/main/%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B51.md)
 - [螺旋矩阵2](https://github.com/RossVermouth/algorithm/blob/main/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B52.md)
 - [旋转图像](https://github.com/RossVermouth/algorithm/blob/main/%E6%97%8B%E8%BD%AC%E5%9B%BE%E5%83%8F.md)
+- [多数元素](https://github.com/RossVermouth/algorithm/blob/main/%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0.md)
 
 ## 链表
 
