@@ -16,6 +16,7 @@
 - [螺旋矩阵2](https://github.com/RossVermouth/algorithm/blob/main/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B52.md)
 - [旋转图像](https://github.com/RossVermouth/algorithm/blob/main/%E6%97%8B%E8%BD%AC%E5%9B%BE%E5%83%8F.md)
 - [多数元素](https://github.com/RossVermouth/algorithm/blob/main/%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0.md)
+- [数组中缺失的元素](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E5%85%83%E7%B4%A0.md)
 
 ## 链表
 
