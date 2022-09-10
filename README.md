@@ -2,7 +2,7 @@
 个人刷题记录，题目来源于代码随想录和leetcode hot 100
 
 ## 数组
-- [知识与导航]
+- [数组导航]
 - [二分查找](https://github.com/RossVermouth/algorithm/blob/main/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
 - [在排序数组中查找元素的第一个和最后一个位置](https://github.com/RossVermouth/algorithm/blob/main/%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE.md)
 - [数组中第k大的数](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84%E4%B8%AD%E7%AC%ACk%E5%A4%A7%E7%9A%84%E5%85%83%E7%B4%A0.md)
