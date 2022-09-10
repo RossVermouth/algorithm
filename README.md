@@ -11,6 +11,7 @@
 - [寻找两个正序数组的中位数](https://github.com/RossVermouth/algorithm/blob/main/%E5%AF%BB%E6%89%BE%E4%B8%A4%E4%B8%AA%E6%AD%A3%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0.md)
 - [移除元素](https://github.com/RossVermouth/algorithm/blob/main/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.md)
 - [移动零](https://github.com/RossVermouth/algorithm/blob/main/%E7%A7%BB%E5%8A%A8%E9%9B%B6.md)
+- [颜色分类（切分模板）](https://github.com/RossVermouth/algorithm/blob/main/%E9%A2%9C%E8%89%B2%E5%88%86%E7%B1%BB(%E5%88%87%E5%88%86%E6%A8%A1%E6%9D%BF).md)
 - [有序数组的平方](https://github.com/RossVermouth/algorithm/blob/main/%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.md)
 - [螺旋矩阵1](https://github.com/RossVermouth/algorithm/blob/main/%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B51.md)
 - [螺旋矩阵2](https://github.com/RossVermouth/algorithm/blob/main/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B52.md)
