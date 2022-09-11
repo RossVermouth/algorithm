@@ -26,7 +26,7 @@
 
 ## 链表
 
-- [9. 用两个栈实现队列](9.%20用两个栈实现队列.md)
+- [移除链表元素](https://github.com/RossVermouth/algorithm/blob/main/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.md)
 
 ## 哈希表
 
