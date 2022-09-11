@@ -1,5 +1,5 @@
 # algorithm
-个人刷题记录，题目来源于代码随想录和leetcode hot 100
+个人刷题记录，题目来源于[代码随想录](https://programmercarl.com/)和leetcode hot 100
 
 ## 数组
 - [数组导航](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84%E5%AF%BC%E8%88%AA.md)
