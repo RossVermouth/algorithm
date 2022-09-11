@@ -25,7 +25,7 @@
 - [下一个排列](https://github.com/RossVermouth/algorithm/blob/main/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md)
 
 ## 链表
-
+- [设计链表](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.md)
 - [移除链表元素](https://github.com/RossVermouth/algorithm/blob/main/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.md)
 
 ## 哈希表
