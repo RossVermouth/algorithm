@@ -33,6 +33,7 @@
 - [删除链表倒数第 N 个节点](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9.md)
 - [相交链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.md)
 - [环形链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)
+- [环形链表2](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A82.md)
 
 ## 哈希表
 
