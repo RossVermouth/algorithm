@@ -40,6 +40,7 @@
 - [排序链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 - [分隔链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.md)
 - [复制带有随机指针的链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8.md)
+- [旋转链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E6%97%8B%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
 
 ## 哈希表
 
