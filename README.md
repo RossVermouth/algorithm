@@ -25,7 +25,7 @@
 - [下一个排列](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md)
 
 ## 链表
-- [知识导航](https://s3.bmp.ovh/imgs/2022/09/13/86876b4f4e68623b.png)
+- [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
 - [设计链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.md)
 - [移除链表元素](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.md)
 - [反转链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
