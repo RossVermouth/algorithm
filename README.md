@@ -34,6 +34,7 @@
 - [相交链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.md)
 - [环形链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)
 - [环形链表2](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A82.md)
+- [回文链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.md)
 - [合并两个有序链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 - [合并k个有序链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E5%90%88%E5%B9%B6k%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
 - [排序链表](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8.md)
