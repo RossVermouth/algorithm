@@ -50,6 +50,7 @@
 - [查找共用字符](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9F%A5%E6%89%BE%E5%85%B1%E7%94%A8%E5%AD%97%E7%AC%A6.md)
 - [快乐数](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%BF%AB%E4%B9%90%E6%95%B0.md)
 - [有效的字母异位词](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9C%89%E6%95%88%E5%AD%97%E6%AF%8D%E7%9A%84%E5%BC%82%E4%BD%8D%E8%AF%8D.md)
+- [赎金信](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%B5%8E%E9%87%91%E4%BF%A1.md)
 
 ## 字符串
 
