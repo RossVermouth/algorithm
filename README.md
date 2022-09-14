@@ -46,6 +46,8 @@
 
 ## 哈希表
 
+- [两个数组的交集](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.md)
+
 ## 字符串
 
 ## 栈、队列与堆
