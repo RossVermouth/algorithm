@@ -65,6 +65,7 @@
 - [比较版本号](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%AF%94%E8%BE%83%E7%89%88%E6%9C%AC%E5%8F%B7.md)
 - [回文子串数](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2%E6%95%B0.md)
 - [最长回文子串](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
+- [两数之和](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 
 ## 栈、队列与堆
 
