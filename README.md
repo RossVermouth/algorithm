@@ -71,6 +71,7 @@
 - [字符串转换整数](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0.md)
 - [分数转小数](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%88%86%E6%95%B0%E8%BD%AC%E5%B0%8F%E6%95%B0.md)
 - [字符串解码](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%A7%A3%E7%A0%81.md)
+- [整数与罗马数字互转](https://github.com/RossVermouth/algorithm/blob/main/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%95%B4%E6%95%B0%E4%B8%8E%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E4%BA%92%E8%BD%AC.md)
 
 ## 栈、队列与堆
 
