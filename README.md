@@ -49,6 +49,7 @@
 - [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
 - [设计HashSet](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%AE%BE%E8%AE%A1HashSet.md)
 - [设计HashMap](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%AE%BE%E8%AE%A1HashMap.md)
+- [设计随机池](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%AE%BE%E8%AE%A1%E9%9A%8F%E6%9C%BA%E6%B1%A0.md)
 - [两个数组的交集](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.md)
 - [查找共用字符](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9F%A5%E6%89%BE%E5%85%B1%E7%94%A8%E5%AD%97%E7%AC%A6.md)
 - [快乐数](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%BF%AB%E4%B9%90%E6%95%B0.md)
