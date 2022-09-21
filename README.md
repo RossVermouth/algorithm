@@ -80,6 +80,7 @@
 
 ## 栈、队列与堆
 
+- [数据流的中位数](https://github.com/RossVermouth/algorithm/tree/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86)
 - [用栈实现队列](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.md)
 - [用队列实现栈](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88.md)
 - [最小栈](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E6%9C%80%E5%B0%8F%E6%A0%88.md)
