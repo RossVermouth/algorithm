@@ -217,8 +217,11 @@ class Solution {
         if (root == null) {
             return root;
         }
+        // 非叶子
         if (root.left != null) {
+            // 因为满二叉树，左孩子存在右孩子必存在，左孩子后继就是右孩子
             root.left.next = root.right;
+            // 右孩子的后继就是当前结点后继的左孩子（如果存在）
             root.right.next = root.next != null ? root.next.left : null;
             connect(root.left);
             connect(root.right);
@@ -230,12 +233,12 @@ class Solution {
 
 ## 题目6
 
-[二叉树的S形遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)  
+[二叉树的S形遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)  
 
 ```java
 class Solution {
-    // 层次遍历的最后将解逆置
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+    // 偶数层反转
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;
@@ -245,6 +248,7 @@ class Solution {
         queue.offer(root);
         int cur = 1;
         int next = 0;
+        boolean reverse = false;
         while (!queue.isEmpty()) {
             TreeNode curNode = queue.poll();
             curLevel.add(curNode.val);
@@ -258,13 +262,16 @@ class Solution {
                 next++;
             }
             if (cur == 0) {
+                if (reverse) {
+                    Collections.reverse(curLevel);
+                }
                 res.add(curLevel);
                 curLevel = new ArrayList<>();
                 cur = next;
                 next = 0;
+                reverse = !reverse;
             }
         }
-        Collections.reverse(res);
         return res;
     }
 }
