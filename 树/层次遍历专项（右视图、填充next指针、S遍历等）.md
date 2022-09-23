@@ -169,52 +169,68 @@ class Solution {
 [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)  
 [117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
 
-要求将每一层从左到右串成链表。  
-
-![](https://sukiui.com/i/2022/09/21/10hi7vk.png)
-
+要求将每一层从左到右串成链表, 116 是满二叉树，117 是普通二叉树，可使用以下 bfs 通用解。  
 
 ```java
 class Solution {
-    // 层次遍历的最后将解逆置
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
+    // 换层时处理下一层结点，将下一层结点串成链表，这里边为了取结点，必须将queue设为List类型
+    public Node connect(Node root) {
         if (root == null) {
-            return res;
+            return root;
         }
-        List<Integer> curLevel = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        List<Node> queue = new LinkedList<>();
+        queue.add(root);
         int cur = 1;
         int next = 0;
         while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            curLevel.add(curNode.val);
+            Node curNode = queue.remove(0);
             cur--;
             if (curNode.left != null) {
-                queue.offer(curNode.left);
+                queue.add(curNode.left);
                 next++;
             }
             if (curNode.right != null) {
-                queue.offer(curNode.right);
+                queue.add(curNode.right);
                 next++;
             }
-            if (cur == 0) {
-                res.add(curLevel);
-                curLevel = new ArrayList<>();
+            if (cur == 0 && !queue.isEmpty()) {
+                for (int i = 0; i < queue.size() - 1; i++) {
+                    Node node1 = queue.get(i);
+                    Node node2 = queue.get(i + 1);
+                    node1.next = node2;
+                }
                 cur = next;
                 next = 0;
             }
         }
-        Collections.reverse(res);
-        return res;
+        return root;
+    }
+}
+```
+
+附满二叉树的递归解法
+
+```java
+class Solution {
+    // O(n) O(n)
+    public Node connect(Node root) {
+        if (root == null) {
+            return root;
+        }
+        if (root.left != null) {
+            root.left.next = root.right;
+            root.right.next = root.next != null ? root.next.left : null;
+            connect(root.left);
+            connect(root.right);
+        }
+        return root;
     }
 }
 ```
 
 ## 题目6
 
-[从下到上输出二叉树各层](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)  
+[二叉树的S形遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)  
 
 ```java
 class Solution {
@@ -253,48 +269,3 @@ class Solution {
     }
 }
 ```
-
-## 题目7
-
-[从下到上输出二叉树各层](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)  
-
-```java
-class Solution {
-    // 层次遍历的最后将解逆置
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (root == null) {
-            return res;
-        }
-        List<Integer> curLevel = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            curLevel.add(curNode.val);
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                res.add(curLevel);
-                curLevel = new ArrayList<>();
-                cur = next;
-                next = 0;
-            }
-        }
-        Collections.reverse(res);
-        return res;
-    }
-}
-```
-
-
-
