@@ -92,7 +92,12 @@
 
 ## 树
 
+- [二叉树遍历模板](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E6%A8%A1%E6%9D%BF.md)
+- [多叉树遍历模板](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E5%A4%9A%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E6%A8%A1%E6%9D%BF.md)
+
 ## 图
+
+- [遍历模板](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%BE/%E9%81%8D%E5%8E%86%E6%A8%A1%E6%9D%BF.md)
 
 ## 回溯
 
