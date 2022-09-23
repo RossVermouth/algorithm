@@ -276,3 +276,47 @@ class Solution {
     }
 }
 ```
+```java
+class Solution {
+    // 双栈法, 奇数层时从左向右入孩子到另一个栈才能实现从右向左出，偶数层从右向左入孩子...
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        List<Integer> curLevel = new LinkedList<>();
+        Deque<TreeNode> curStack = new LinkedList<>();
+        Deque<TreeNode> otherStack = new LinkedList<>();
+        curStack.push(root);
+        boolean odd = true;
+        while (!curStack.isEmpty()) {
+            TreeNode curNode = curStack.pop();
+            curLevel.add(curNode.val);
+            if (odd) {
+                if (curNode.left != null) {
+                    otherStack.push(curNode.left);
+                }
+                if (curNode.right != null) {
+                    otherStack.push(curNode.right);
+                }
+            } else {
+                if (curNode.right != null) {
+                    otherStack.push(curNode.right);
+                }
+                if (curNode.left != null) {
+                    otherStack.push(curNode.left);
+                }
+            }
+            if (curStack.isEmpty()) {
+                res.add(curLevel);
+                curLevel = new LinkedList<>();
+                Deque<TreeNode> temp = curStack;
+                curStack = otherStack;
+                otherStack = temp;
+                odd = !odd;
+            }
+        }
+        return res;
+    }
+}
+```
