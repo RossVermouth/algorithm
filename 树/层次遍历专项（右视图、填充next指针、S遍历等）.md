@@ -173,32 +173,32 @@ class Solution {
 
 ```java
 class Solution {
+    // 首选边遍历边处理，将每一层非最后结点的后继设为queue.peek
     // 换层时处理下一层结点，将下一层结点串成链表，这里边为了取结点，必须将queue设为List类型
     public Node connect(Node root) {
         if (root == null) {
             return root;
         }
-        List<Node> queue = new LinkedList<>();
-        queue.add(root);
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
         int cur = 1;
         int next = 0;
         while (!queue.isEmpty()) {
-            Node curNode = queue.remove(0);
+            Node curNode = queue.poll();;
             cur--;
+            // 当前层还有结点即当前处理结点不是一层的尾结点
+            if (cur > 0) {
+                curNode.next = queue.peek();
+            }
             if (curNode.left != null) {
-                queue.add(curNode.left);
+                queue.offer(curNode.left);
                 next++;
             }
             if (curNode.right != null) {
-                queue.add(curNode.right);
+                queue.offer(curNode.right);
                 next++;
             }
-            if (cur == 0 && !queue.isEmpty()) {
-                for (int i = 0; i < queue.size() - 1; i++) {
-                    Node node1 = queue.get(i);
-                    Node node2 = queue.get(i + 1);
-                    node1.next = node2;
-                }
+            if (cur == 0) {
                 cur = next;
                 next = 0;
             }
