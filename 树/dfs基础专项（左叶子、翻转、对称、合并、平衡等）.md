@@ -1,172 +1,103 @@
 ## 题目1
 
-[从下到上输出二叉树各层](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)  
+[二叉树最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  
+
+指的是树跟到最远叶子路径上的节点数，就是树高。
 
 ```java
 class Solution {
-    // 层次遍历的最后将解逆置
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
+    // 后序遍历，左右子树最大深度的较大者 + 1 O(n) O(n)
+    public int maxDepth(TreeNode root) {
         if (root == null) {
-            return res;
+            return 0;
         }
-        List<Integer> curLevel = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            curLevel.add(curNode.val);
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                res.add(curLevel);
-                curLevel = new ArrayList<>();
-                cur = next;
-                next = 0;
-            }
-        }
-        Collections.reverse(res);
-        return res;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 }
 ```
 
 ## 题目2
 
-[二叉树右视图](https://leetcode.cn/problems/binary-tree-right-side-view/)  
+[二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)  
+
+最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
+
+```html
+输入：root = [3,9,20,null,null,15,7]
+输出：2
+
+输入：root = [2,null,3,null,4,null,5,null,6]
+输出：5
+```
 
 ```java
 class Solution {
-    // 层次遍历收集每层的最后一个结点即可
-    public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+    // 后序遍历，当有一侧孩子不存在时，用另一侧孩子的解+1，否则两侧解取较小值+1 O(n) O(n)
+    public int minDepth(TreeNode root) {
         if (root == null) {
-            return res;
+            return 0;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                res.add(curNode.val);
-                cur = next;
-                next = 0;
-            }
+        if (root.left != null && root.right == null) {
+            return minDepth(root.left) + 1;
         }
-        return res;
+        if (root.left == null && root.right != null) {
+            return minDepth(root.right) + 1;
+        }
+        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
     }
 }
 ```
 
 ## 题目3
 
-[二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)  
+[二叉树的结点数](https://leetcode.cn/problems/count-complete-tree-nodes/)  
 
 ```java
 class Solution {
-    // method1：边遍历边求解 method2：换层统一求解，这里边 int -> Double 必须 (double)num 不能直接add
-    public List<Double> averageOfLevels(TreeNode root) {
-        List<Double> res = new ArrayList<>();
+    // O(n) O(n)
+    public int countNodes(TreeNode root) {
         if (root == null) {
-            return res;
+            return 0;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        double sum = 0.0;
-        int num = 1;
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            sum += curNode.val;
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                res.add(sum / num);
-                sum = 0;
-                num = next;
-                cur = next;
-                next = 0;
-            }
-        }
-        return res;
+        return countNodes(root.left) + countNodes(root.right) + 1;
     }
 }
 ```
 
 ## 题目4
 
-[在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)  
+[左叶子之和](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)  
+
+给定二叉树的根节点 root ，返回所有左叶子之和。  
+
+```html
+输入: root = [3,9,20,null,null,15,7] 
+输出: 24 
+解释: 在这个二叉树中，有两个左叶子，分别是 9 和 15，所以返回 24
+
+输入: root = [1]
+输出: 0
+```
 
 ```java
 class Solution {
-    // method1：边遍历边求解 method2：换层统一求解
-    public List<Integer> largestValues(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+    // O(n) O(n) 处理当前结点（当前结点左孩子是左叶子则计和），递归处理左右子树
+    public int sumOfLeftLeaves(TreeNode root) {
         if (root == null) {
-            return res;
+            return 0;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int max = Integer.MIN_VALUE;
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            if (curNode.val > max) {
-                max = curNode.val;
-            }
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                res.add(max);
-                max = Integer.MIN_VALUE;
-                cur = next;
-                next = 0;
-            }
-        }
-        return res;
+        // 必须是左孩子，并且必须是叶子才计数
+        int sum = root.left != null && root.left.left == null && root.left.right == null ? root.left.val : 0;
+        return sum + sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
     }
 }
 ```
 
 ## 题目5
 
-[找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)  
+[判断一棵树是否平衡](https://leetcode.cn/problems/balanced-binary-tree/)  
+
+
 
 ```java
 class Solution {
