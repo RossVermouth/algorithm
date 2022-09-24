@@ -361,6 +361,72 @@ class Solution {
 
 ## 题目8
 
+[二叉树的最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)  
+
+给你一棵二叉树的根节点 root ，返回树的**最大宽度**。  
+
+树的最大宽度是所有层中最大的宽度。  
+
+每一层的宽度被定义为该层最左和最右的非空节点（即，两个端点）之间的长度。将这个二叉树视作与满二叉树结构相同，两端点间会出现一些延伸到这一层的 null 节点，**这些 null 节点也计入长度**。
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E6%9C%80%E5%A4%A7%E5%AE%BD%E5%BA%A6.png)
+```html
+输入：root = [1,3,2,5,null,null,9,6,null,7]
+输出：7
+解释：最大宽度出现在树的第 4 层，宽度为 7 (6,null,null,null,null,null,7) 。  
+```
+将树的每个结点添加一个伴随 tag ，一个结点 node 其左右孩子的 tag 分别为 2tag + 1 和 2tag + 2。  
+
+将树的每一层最右侧结点 tag - 最左侧结点 tag 就是这一层的宽度，求出所有层的宽度取最大的即可。
+
+```java
+class Solution {
+    // O(n) O(n)
+    public int widthOfBinaryTree(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        Deque<Node> queue = new LinkedList<>();
+        queue.addLast(new Node(root, 0));
+        int res = 1;
+        int cur = 1;
+        int next = 0;
+        while (!queue.isEmpty()) {
+            Node curNode = queue.removeFirst();
+            cur--;
+            TreeNode curTreeNode = curNode.node;
+            if (curTreeNode.left != null) {
+                queue.addLast(new Node(curTreeNode.left, curNode.tag * 2 + 1));
+                next++;
+            }
+            if (curTreeNode.right != null) {
+                queue.addLast(new Node(curTreeNode.right, curNode.tag * 2 + 2));
+                next++;
+            }
+            // 统一处理一层，必须对容器不空做判断
+            if (cur == 0 && !queue.isEmpty()) {
+                res = Math.max(res, queue.peekLast().tag - queue.peekFirst().tag + 1);
+                cur = next;
+                next = 0;
+            }
+        }
+        return res;
+    }
+}
+
+class Node {
+    TreeNode node;
+    int tag;
+    public Node() {}
+    public Node(TreeNode node, int tag) {
+        this.node = node;
+        this.tag = tag;
+    }
+}
+```
+
+## 题目9
+
 [**微软真题**：对二叉树的每一层进行排序](https://www.nowcoder.com/discuss/954988)  
 
 ![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%BE%AE%E8%BD%AF%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.png)
