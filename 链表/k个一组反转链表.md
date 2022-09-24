@@ -10,12 +10,12 @@ k 是一个正整数，它的值小于或等于链表的长度且大于等于 1�
 
 你不能只是单纯的改变节点内部的值，而是需要实际进行节点交换。
 
-![](https://s3.bmp.ovh/imgs/2022/09/11/5c9ffce5d7d6eea4.png)
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/2%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC.png)
 ```html
 输入：head = [1,2,3,4,5], k = 2
 输出：[2,1,4,3,5]
 ```
-![](https://s3.bmp.ovh/imgs/2022/09/11/8da651f9411f38ce.png)
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/k%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC.png)
 ```html
 输入：head = [1,2,3,4,5], k = 3
 输出：[3,2,1,4,5]
@@ -35,7 +35,7 @@ k 是一个正整数，它的值小于或等于链表的长度且大于等于 1�
 
 直到 start 为空，返回结果即可。
 
-![](https://s3.bmp.ovh/imgs/2022/09/11/99f3dfc60edcbc9c.png)
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/k%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.png)
 
 ```java
 class Solution {
