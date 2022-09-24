@@ -129,7 +129,7 @@ class Solution {
             this.height = height;
         }
     }
-    // 后序遍历复杂度O(n) O(n)
+    // 基本树形dp 复杂度O(n) O(n)
     public boolean isBalanced(TreeNode root) {
         return getInfo(root).isBalanced;
     }
@@ -148,6 +148,48 @@ class Solution {
 ```
 
 ## 题目6
+
+[lc98.判断一棵树是否是BST](https://leetcode.cn/problems/validate-binary-search-tree/)    
+
+-2^31 <= Node.val <= 2^31 - 1  
+
+BST指的是树要么为空，要么对于树中的任何一个结点其左右子树都是BST  
+且左子树中最大值**小于**当前节点值，右子树中的最小值**大于**当前结点值。
+
+```java
+class Solution {
+    private static class Info {
+        boolean isBST;
+        // 防溢出，规避 root(Integer.MAX_VALUE) 情况
+        long max;
+        long min;
+        public Info() {}
+        public Info(boolean isBST, long max, long min) {
+            this.isBST = isBST;
+            this.max = max;
+            this.min = min;
+        }
+    }
+    // 基本树形dp O(n) O(n)
+    public boolean isValidBST(TreeNode root) {
+        return getInfo(root).isBST;
+    }
+
+    private Info getInfo(TreeNode x) {
+        if (x == null) {
+            return new Info(true, Long.MIN_VALUE, Long.MAX_VALUE);
+        }
+        Info leftInfo = getInfo(x.left);
+        Info rightInfo = getInfo(x.right);
+        boolean isBST = leftInfo.isBST && rightInfo.isBST && leftInfo.max < x.val && rightInfo.min > x.val;
+        long max = Math.max(Math.max(leftInfo.max, rightInfo.max), x.val);
+        long min = Math.min(Math.min(leftInfo.min, rightInfo.min), x.val);
+        return new Info(isBST, max, min);
+    }
+}
+```
+
+## 题目7
 
 [lc226.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)  
 
@@ -174,7 +216,7 @@ class Solution {
 }
 ```
 
-## 题目7
+## 题目8
 
 [lc101.对称二叉树](https://leetcode.cn/problems/symmetric-tree/)  
 
@@ -216,7 +258,7 @@ class Solution {
 }
 ```
 
-## 题目8
+## 题目9
 
 [lc617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/)    
 
