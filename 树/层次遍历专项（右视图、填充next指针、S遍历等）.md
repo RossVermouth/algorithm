@@ -166,6 +166,42 @@ class Solution {
 
 ## 题目5
 
+[找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)  
+
+```java
+class Solution {
+    // 就是求最后一层的第一个结点 O(n) O(n)
+    public int findBottomLeftValue(TreeNode root) {
+        // 树必不为空
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        int res = root.val;
+        int cur = 1;
+        int next = 0;
+        while (!queue.isEmpty()) {
+            TreeNode curNode = queue.poll();
+            cur--;
+            if (curNode.left != null) {
+                queue.offer(curNode.left);
+                next++;
+            }
+            if (curNode.right != null) {
+                queue.offer(curNode.right);
+                next++;
+            }
+            if (cur == 0 && !queue.isEmpty()) {
+                res = queue.peek().val;
+                cur = next;
+                next = 0;
+            }
+        }
+        return res;
+    }
+}
+```
+
+## 题目6
+
 [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)  
 [117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
 
@@ -233,7 +269,7 @@ class Solution {
 }
 ```
 
-## 题目6
+## 题目7
 
 [二叉树的S形遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)  
 
@@ -323,7 +359,7 @@ class Solution {
 }
 ```
 
-## 题目7
+## 题目8
 
 [**微软真题**：对二叉树的每一层进行排序](https://www.nowcoder.com/discuss/954988)  
 
