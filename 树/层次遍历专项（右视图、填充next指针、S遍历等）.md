@@ -169,6 +169,8 @@ class Solution {
 [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)  
 [117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
 
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%A1%AB%E5%85%85%E6%A0%91%E5%90%8E%E7%BB%A7.png)
+
 要求将每一层从左到右串成链表, 116 是满二叉树，117 是普通二叉树，可使用以下 bfs 通用解。  
 
 ```java
@@ -325,46 +327,129 @@ class Solution {
 
 [**微软真题**：对二叉树的每一层进行排序](https://www.nowcoder.com/discuss/954988)  
 
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%BE%AE%E8%BD%AF%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.png)
 
+从图中可以看出，在保持树结构不变的情况下，将每一层结点的值升序排序。  
+
+使用二叉树层次遍历，在每次换层的时候取出结点的值，升序排序再进行值覆盖即可。  
+
+```html
+输入：
+100 : 7 9 6 
+7 : 33 10 
+33 : 
+10 : 
+9 : 5 
+5 : 
+6 : 22 8 1 
+22 : 
+8 : 
+1 : 
+输出：
+100 : 6 7 9 
+6 : 1 5 
+1 : 
+5 : 
+7 : 8 
+8 : 
+9 : 10 22 33 
+10 : 
+22 : 
+33 : 
+```
 
 ```java
-class Solution {
-    // 偶数层反转
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
+package leetcode;
+
+import java.util.*;
+
+class TreeNode {
+    int val;
+    List<TreeNode> children;
+    public TreeNode() {}
+    public TreeNode(int val) {
+        this.val = val;
+    }
+    public TreeNode(int val, List<TreeNode> children) {
+        this.val = val;
+        this.children = children;
+    }
+}
+
+public class BfsSolution {
+    // bfs
+    public void sortLevel(TreeNode root) {
         if (root == null) {
-            return res;
+            return;
         }
-        List<Integer> curLevel = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         int cur = 1;
         int next = 0;
-        boolean reverse = false;
         while (!queue.isEmpty()) {
             TreeNode curNode = queue.poll();
-            curLevel.add(curNode.val);
             cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
+            for (TreeNode child: curNode.children) {
+                queue.offer(child);
                 next++;
             }
             if (cur == 0) {
-                if (reverse) {
-                    Collections.reverse(curLevel);
+                List<Integer> list = new ArrayList<>();
+                for (TreeNode node: queue) {
+                    list.add(node.val);
                 }
-                res.add(curLevel);
-                curLevel = new ArrayList<>();
+                Collections.sort(list);
+                int idx = 0;
+                for (TreeNode node: queue) {
+                    node.val = list.get(idx++);
+                }
                 cur = next;
                 next = 0;
-                reverse = !reverse;
             }
         }
-        return res;
+    }
+
+    // dfs
+    private void printTree(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        String res = root.val + " : ";
+        for (TreeNode child: root.children) {
+            res += child.val + " ";
+        }
+        System.out.println(res);
+        for (TreeNode child: root.children) {
+            printTree(child);
+        }
+    }
+
+    public static void main(String[] args) {
+        // test case 1: 题目测例
+        TreeNode node1 = new TreeNode(100, new ArrayList<>());
+        TreeNode node2 = new TreeNode(7, new ArrayList<>());
+        TreeNode node3 = new TreeNode(9, new ArrayList<>());
+        TreeNode node4 = new TreeNode(6, new ArrayList<>());
+        TreeNode node5 = new TreeNode(33, new ArrayList<>());
+        TreeNode node6 = new TreeNode(10, new ArrayList<>());
+        TreeNode node7 = new TreeNode(5, new ArrayList<>());
+        TreeNode node8 = new TreeNode(22, new ArrayList<>());
+        TreeNode node9 = new TreeNode(8, new ArrayList<>());
+        TreeNode node10 = new TreeNode(1, new ArrayList<>());
+        node1.children.add(node2);
+        node1.children.add(node3);
+        node1.children.add(node4);
+        node2.children.add(node5);
+        node2.children.add(node6);
+        node3.children.add(node7);
+        node4.children.add(node8);
+        node4.children.add(node9);
+        node4.children.add(node10);
+        BfsSolution bfsSolution = new BfsSolution();
+        bfsSolution.sortLevel(node1);
+        bfsSolution.printTree(node1);
+        // test case2: 空树
+        // test case3: 只有一个结点
     }
 }
 ```
