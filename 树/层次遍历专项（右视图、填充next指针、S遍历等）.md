@@ -320,3 +320,51 @@ class Solution {
     }
 }
 ```
+
+## 题目7
+
+[**微软真题**：对二叉树的每一层进行排序](https://www.nowcoder.com/discuss/954988)  
+
+
+
+```java
+class Solution {
+    // 偶数层反转
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        List<Integer> curLevel = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        int cur = 1;
+        int next = 0;
+        boolean reverse = false;
+        while (!queue.isEmpty()) {
+            TreeNode curNode = queue.poll();
+            curLevel.add(curNode.val);
+            cur--;
+            if (curNode.left != null) {
+                queue.offer(curNode.left);
+                next++;
+            }
+            if (curNode.right != null) {
+                queue.offer(curNode.right);
+                next++;
+            }
+            if (cur == 0) {
+                if (reverse) {
+                    Collections.reverse(curLevel);
+                }
+                res.add(curLevel);
+                curLevel = new ArrayList<>();
+                cur = next;
+                next = 0;
+                reverse = !reverse;
+            }
+        }
+        return res;
+    }
+}
+```
