@@ -1,6 +1,6 @@
 ## 题目1
 
-[二叉树最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  
+[lc104.二叉树最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  
 
 指的是树跟到最远叶子路径上的节点数，就是树高。
 
@@ -18,7 +18,7 @@ class Solution {
 
 ## 题目2
 
-[二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)  
+[lc111.二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)  
 
 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
 
@@ -50,7 +50,7 @@ class Solution {
 
 ## 题目3
 
-[二叉树的结点数](https://leetcode.cn/problems/count-complete-tree-nodes/)  
+[lc222.二叉树的结点数](https://leetcode.cn/problems/count-complete-tree-nodes/)  
 
 ```java
 class Solution {
@@ -66,7 +66,7 @@ class Solution {
 
 ## 题目4
 
-[左叶子之和](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)  
+[lc404.左叶子之和](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)  
 
 给定二叉树的根节点 root ，返回所有左叶子之和。  
 
@@ -95,106 +95,80 @@ class Solution {
 
 ## 题目5
 
-[判断一棵树是否平衡](https://leetcode.cn/problems/balanced-binary-tree/)  
+[lc110.判断一棵树是否平衡](https://leetcode.cn/problems/balanced-binary-tree/)  
 
-
+平衡二叉树指的是树要么为空，要么对于树中的任何一个结点其左右子树都是平衡二叉树且高度差的绝对值不超过 1 。
 
 ```java
 class Solution {
-    // 就是求最后一层的第一个结点 O(n) O(n)
-    public int findBottomLeftValue(TreeNode root) {
-        // 树必不为空
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        int res = root.val;
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0 && !queue.isEmpty()) {
-                res = queue.peek().val;
-                cur = next;
-                next = 0;
-            }
+    // 先序遍历 T(n) = 2 T(n/2) + O(n) 平均O(nlogn) O(logn) 最坏O(n^2) O(n)
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) {
+            return true;
         }
-        return res;
+        return isBalanced(root.left) && isBalanced(root.right) && Math.abs(height(root.left) - height(root.right)) <= 1;
+    }
+
+    private int height(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return Math.max(height(root.left), height(root.right)) + 1;
+    }
+}
+```
+
+```java
+class Solution {
+    private static class Info {
+        boolean isBalanced;
+        int height;
+        public Info() {}
+        public Info(boolean isBalanced, int height) {
+            this.isBalanced = isBalanced;
+            this.height = height;
+        }
+    }
+    // 后序遍历复杂度O(n) O(n)
+    public boolean isBalanced(TreeNode root) {
+        return getInfo(root).isBalanced;
+    }
+
+    private Info getInfo(TreeNode x) {
+        if (x == null) {
+            return new Info(true, 0);
+        }
+        Info leftInfo = getInfo(x.left);
+        Info rightInfo = getInfo(x.right);
+        boolean isBalanced = leftInfo.isBalanced && rightInfo.isBalanced && Math.abs(leftInfo.height - rightInfo.height) <= 1;
+        int height = Math.max(leftInfo.height, rightInfo.height) + 1;
+        return new Info(isBalanced, height);
     }
 }
 ```
 
 ## 题目6
 
-[116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)  
-[117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
+[lc226.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)  
 
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%A1%AB%E5%85%85%E6%A0%91%E5%90%8E%E7%BB%A7.png)
-
-要求将每一层从左到右串成链表, 116 是满二叉树，117 是普通二叉树，可使用以下 bfs 通用解。  
-
-```java
-class Solution {
-    // 首选边遍历边处理，将每一层非最后结点的后继设为queue.peek
-    // 换层时处理下一层结点，将下一层结点串成链表，这里边为了取结点，必须将queue设为List类型
-    public Node connect(Node root) {
-        if (root == null) {
-            return root;
-        }
-        Queue<Node> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            Node curNode = queue.poll();;
-            cur--;
-            // 当前层还有结点即当前处理结点不是一层的尾结点
-            if (cur > 0) {
-                curNode.next = queue.peek();
-            }
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                cur = next;
-                next = 0;
-            }
-        }
-        return root;
-    }
-}
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.png) 
+```html
+输入：root = [4,2,7,1,3,6,9]
+输出：[4,7,2,9,6,3,1]
 ```
-
-附满二叉树的递归解法
 
 ```java
 class Solution {
     // O(n) O(n)
-    public Node connect(Node root) {
+    public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return root;
         }
-        // 非叶子
-        if (root.left != null) {
-            // 因为满二叉树，左孩子存在右孩子必存在，左孩子后继就是右孩子
-            root.left.next = root.right;
-            // 右孩子的后继就是当前结点后继的左孩子（如果存在）
-            root.right.next = root.next != null ? root.next.left : null;
-            connect(root.left);
-            connect(root.right);
-        }
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        invertTree(root.left);
+        invertTree(root.right);
         return root;
     }
 }
@@ -202,221 +176,74 @@ class Solution {
 
 ## 题目7
 
-[二叉树的S形遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)  
+[lc101.对称二叉树](https://leetcode.cn/problems/symmetric-tree/)  
+
+给你一个二叉树的根节点 root ， 检查它是否轴对称。  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%911.png)
+```html
+输入：root = [1,2,2,3,4,4,3]
+输出：true
+```
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%912.png)
+```html
+输入：root = [1,2,2,null,3,null,3]
+输出：false
+```
+
+树镜像 <=> 根-左-右序列化结果和根-右-左序列化结果必须一致（必须带空指针）。
 
 ```java
 class Solution {
-    // 偶数层反转
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (root == null) {
-            return res;
-        }
-        List<Integer> curLevel = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        boolean reverse = false;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            curLevel.add(curNode.val);
-            cur--;
-            if (curNode.left != null) {
-                queue.offer(curNode.left);
-                next++;
-            }
-            if (curNode.right != null) {
-                queue.offer(curNode.right);
-                next++;
-            }
-            if (cur == 0) {
-                if (reverse) {
-                    Collections.reverse(curLevel);
-                }
-                res.add(curLevel);
-                curLevel = new ArrayList<>();
-                cur = next;
-                next = 0;
-                reverse = !reverse;
-            }
-        }
-        return res;
+    // O(n) O(n) 树镜像 <=> 根-左-右 w null == 根-右-左 w null
+    public boolean isSymmetric(TreeNode root) {
+        return isSymmetric(root, root);
     }
-}
-```
-```java
-class Solution {
-    // 双栈法, 奇数层时从左向右入孩子到另一个栈才能实现从右向左出，偶数层从右向左入孩子...
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (root == null) {
-            return res;
+
+    private boolean isSymmetric(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) {
+            return true;
         }
-        List<Integer> curLevel = new LinkedList<>();
-        Deque<TreeNode> curStack = new LinkedList<>();
-        Deque<TreeNode> otherStack = new LinkedList<>();
-        curStack.push(root);
-        boolean odd = true;
-        while (!curStack.isEmpty()) {
-            TreeNode curNode = curStack.pop();
-            curLevel.add(curNode.val);
-            if (odd) {
-                if (curNode.left != null) {
-                    otherStack.push(curNode.left);
-                }
-                if (curNode.right != null) {
-                    otherStack.push(curNode.right);
-                }
-            } else {
-                if (curNode.right != null) {
-                    otherStack.push(curNode.right);
-                }
-                if (curNode.left != null) {
-                    otherStack.push(curNode.left);
-                }
-            }
-            if (curStack.isEmpty()) {
-                res.add(curLevel);
-                curLevel = new LinkedList<>();
-                Deque<TreeNode> temp = curStack;
-                curStack = otherStack;
-                otherStack = temp;
-                odd = !odd;
-            }
+        if (root1 != null && root2 == null) {
+            return false;
         }
-        return res;
+        if (root1 == null && root2 != null) {
+            return false;
+        }
+        return root1.val == root2.val && isSymmetric(root1.left, root2.right) && isSymmetric(root1.right, root2.left);
     }
 }
 ```
 
 ## 题目8
 
-[**微软真题**：对二叉树的每一层进行排序](https://www.nowcoder.com/discuss/954988)  
+[lc617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/)    
 
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%BE%AE%E8%BD%AF%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.png)
+合并的规则是：从根开始，如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。  
 
-从图中可以看出，在保持树结构不变的情况下，将每一层结点的值升序排序。  
+返回合并后的二叉树。
 
-使用二叉树层次遍历，在每次换层的时候取出结点的值，升序排序再进行值覆盖即可。  
-
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91.png)
 ```html
-输入：
-100 : 7 9 6 
-7 : 33 10 
-33 : 
-10 : 
-9 : 5 
-5 : 
-6 : 22 8 1 
-22 : 
-8 : 
-1 : 
-输出：
-100 : 6 7 9 
-6 : 1 5 
-1 : 
-5 : 
-7 : 8 
-8 : 
-9 : 10 22 33 
-10 : 
-22 : 
-33 : 
+输入：root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+输出：[3,4,5,5,4,null,7]
 ```
 
 ```java
-package leetcode;
-
-import java.util.*;
-
-class TreeNode {
-    int val;
-    List<TreeNode> children;
-    public TreeNode() {}
-    public TreeNode(int val) {
-        this.val = val;
-    }
-    public TreeNode(int val, List<TreeNode> children) {
-        this.val = val;
-        this.children = children;
-    }
-}
-
-public class BfsSolution {
-    // bfs
-    public void sortLevel(TreeNode root) {
-        if (root == null) {
-            return;
+class Solution {
+    // 一个树为空，结果就是另一个树，否则合并值并递归合并子树 O(min(n1, n2)) O(min(n1, n2))
+    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+        if (root1 == null) {
+            return root2;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int cur = 1;
-        int next = 0;
-        while (!queue.isEmpty()) {
-            TreeNode curNode = queue.poll();
-            cur--;
-            for (TreeNode child: curNode.children) {
-                queue.offer(child);
-                next++;
-            }
-            if (cur == 0) {
-                List<Integer> list = new ArrayList<>();
-                for (TreeNode node: queue) {
-                    list.add(node.val);
-                }
-                Collections.sort(list);
-                int idx = 0;
-                for (TreeNode node: queue) {
-                    node.val = list.get(idx++);
-                }
-                cur = next;
-                next = 0;
-            }
+        if (root2 == null) {
+            return root1;
         }
-    }
-
-    // dfs
-    private void printTree(TreeNode root) {
-        if (root == null) {
-            return;
-        }
-        String res = root.val + " : ";
-        for (TreeNode child: root.children) {
-            res += child.val + " ";
-        }
-        System.out.println(res);
-        for (TreeNode child: root.children) {
-            printTree(child);
-        }
-    }
-
-    public static void main(String[] args) {
-        // test case 1: 题目测例
-        TreeNode node1 = new TreeNode(100, new ArrayList<>());
-        TreeNode node2 = new TreeNode(7, new ArrayList<>());
-        TreeNode node3 = new TreeNode(9, new ArrayList<>());
-        TreeNode node4 = new TreeNode(6, new ArrayList<>());
-        TreeNode node5 = new TreeNode(33, new ArrayList<>());
-        TreeNode node6 = new TreeNode(10, new ArrayList<>());
-        TreeNode node7 = new TreeNode(5, new ArrayList<>());
-        TreeNode node8 = new TreeNode(22, new ArrayList<>());
-        TreeNode node9 = new TreeNode(8, new ArrayList<>());
-        TreeNode node10 = new TreeNode(1, new ArrayList<>());
-        node1.children.add(node2);
-        node1.children.add(node3);
-        node1.children.add(node4);
-        node2.children.add(node5);
-        node2.children.add(node6);
-        node3.children.add(node7);
-        node4.children.add(node8);
-        node4.children.add(node9);
-        node4.children.add(node10);
-        BfsSolution bfsSolution = new BfsSolution();
-        bfsSolution.sortLevel(node1);
-        bfsSolution.printTree(node1);
-        // test case2: 空树
-        // test case3: 只有一个结点
+        root1.val += root2.val;
+        root1.left = mergeTrees(root1.left, root2.left);
+        root1.right = mergeTrees(root1.right, root2.right);
+        return root1;
     }
 }
 ```
