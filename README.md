@@ -97,6 +97,9 @@
 - [dfs基础专项（左叶子、翻转、对称、合并、判断平衡orBST等](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/dfs%E5%9F%BA%E7%A1%80%E4%B8%93%E9%A1%B9%EF%BC%88%E5%B7%A6%E5%8F%B6%E5%AD%90%E3%80%81%E7%BF%BB%E8%BD%AC%E3%80%81%E5%AF%B9%E7%A7%B0%E3%80%81%E5%90%88%E5%B9%B6%E3%80%81%E5%B9%B3%E8%A1%A1orBST%E7%AD%89%EF%BC%89.md)
 - [bfs基础专项（右视图、填充next指针，S遍历，最大宽度等）](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/bfs%E5%9F%BA%E7%A1%80%E4%B8%93%E9%A1%B9%EF%BC%88%E5%8F%B3%E8%A7%86%E5%9B%BE%E3%80%81%E5%A1%AB%E5%85%85next%E6%8C%87%E9%92%88%E3%80%81S%E9%81%8D%E5%8E%86%E7%AD%89%EF%BC%89.md)
 - [路径模板（二叉树所有路径，N叉树以p结尾和为targetSum的所有路径）](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E8%B7%AF%E5%BE%84%E6%A8%A1%E6%9D%BF.md)
+- [序列化与反序列化](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)
+- [前序中序构建二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.md)
+- [中序后序构建二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.md)
 
 ## 图
 
