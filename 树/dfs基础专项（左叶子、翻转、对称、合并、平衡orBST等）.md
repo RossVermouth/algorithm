@@ -95,6 +95,135 @@ class Solution {
 
 ## 题目5
 
+[lc101.相同的树](https://leetcode.cn/problems/same-tree/)  
+
+给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。  
+
+如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。  
+
+```html
+输入：p = [1,2,3], q = [1,2,3]
+输出：true
+```
+
+树相同 <=> 采用相同遍历方式得到的序列化结果是相同的。
+
+```java
+class Solution {
+    // O(n) O(logn)/O(n)
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
+            return true;
+        }
+        if (p == null || q == null) {
+            return false;
+        }
+        return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    }
+}
+```
+
+## 题目6
+
+[lc101.对称二叉树](https://leetcode.cn/problems/symmetric-tree/)  
+
+给你一个二叉树的根节点 root ， 检查它是否轴对称。  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%911.png)
+```html
+输入：root = [1,2,2,3,4,4,3]
+输出：true
+```
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%912.png)
+```html
+输入：root = [1,2,2,null,3,null,3]
+输出：false
+```
+
+树镜像 <=> 根-左-右序列化结果和根-右-左序列化结果必须一致（必须带空指针）。
+
+```java
+class Solution {
+    // O(n) O(n) 树镜像 <=> 根-左-右 w null == 根-右-左 w null
+    public boolean isSymmetric(TreeNode root) {
+        return isSymmetric(root, root);
+    }
+
+    private boolean isSymmetric(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) {
+            return true;
+        }
+        if (root1 != null || root2 == null) {
+            return false;
+        }
+        return root1.val == root2.val && isSymmetric(root1.left, root2.right) && isSymmetric(root1.right, root2.left);
+    }
+}
+```
+
+## 题目7
+
+[lc226.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.png) 
+```html
+输入：root = [4,2,7,1,3,6,9]
+输出：[4,7,2,9,6,3,1]
+```
+
+```java
+class Solution {
+    // O(n) O(n)
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return root;
+        }
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        invertTree(root.left);
+        invertTree(root.right);
+        return root;
+    }
+}
+```
+
+## 题目8
+
+[lc617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/)    
+
+合并的规则是：从根开始，如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。  
+
+返回合并后的二叉树。
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91.png)
+```html
+输入：root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+输出：[3,4,5,5,4,null,7]
+```
+
+```java
+class Solution {
+    // 一个树为空，结果就是另一个树，否则合并值并递归合并子树 O(min(n1, n2)) O(min(n1, n2))
+    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+        if (root1 == null) {
+            return root2;
+        }
+        if (root2 == null) {
+            return root1;
+        }
+        root1.val += root2.val;
+        root1.left = mergeTrees(root1.left, root2.left);
+        root1.right = mergeTrees(root1.right, root2.right);
+        return root1;
+    }
+}
+```
+
+
+## 题目9
+
 [lc110.判断一棵树是否平衡](https://leetcode.cn/problems/balanced-binary-tree/)  
 
 平衡二叉树指的是树要么为空，要么对于树中的任何一个结点其左右子树都是平衡二叉树且高度差的绝对值不超过 1 。
@@ -147,7 +276,7 @@ class Solution {
 }
 ```
 
-## 题目6
+## 题目10
 
 [lc98.判断一棵树是否是BST](https://leetcode.cn/problems/validate-binary-search-tree/)    
 
@@ -189,103 +318,3 @@ class Solution {
 }
 ```
 
-## 题目7
-
-[lc226.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)  
-
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.png) 
-```html
-输入：root = [4,2,7,1,3,6,9]
-输出：[4,7,2,9,6,3,1]
-```
-
-```java
-class Solution {
-    // O(n) O(n)
-    public TreeNode invertTree(TreeNode root) {
-        if (root == null) {
-            return root;
-        }
-        TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
-        invertTree(root.left);
-        invertTree(root.right);
-        return root;
-    }
-}
-```
-
-## 题目8
-
-[lc101.对称二叉树](https://leetcode.cn/problems/symmetric-tree/)  
-
-给你一个二叉树的根节点 root ， 检查它是否轴对称。  
-
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%911.png)
-```html
-输入：root = [1,2,2,3,4,4,3]
-输出：true
-```
-
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%912.png)
-```html
-输入：root = [1,2,2,null,3,null,3]
-输出：false
-```
-
-树镜像 <=> 根-左-右序列化结果和根-右-左序列化结果必须一致（必须带空指针）。
-
-```java
-class Solution {
-    // O(n) O(n) 树镜像 <=> 根-左-右 w null == 根-右-左 w null
-    public boolean isSymmetric(TreeNode root) {
-        return isSymmetric(root, root);
-    }
-
-    private boolean isSymmetric(TreeNode root1, TreeNode root2) {
-        if (root1 == null && root2 == null) {
-            return true;
-        }
-        if (root1 != null && root2 == null) {
-            return false;
-        }
-        if (root1 == null && root2 != null) {
-            return false;
-        }
-        return root1.val == root2.val && isSymmetric(root1.left, root2.right) && isSymmetric(root1.right, root2.left);
-    }
-}
-```
-
-## 题目9
-
-[lc617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/)    
-
-合并的规则是：从根开始，如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。  
-
-返回合并后的二叉树。
-
-![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91.png)
-```html
-输入：root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
-输出：[3,4,5,5,4,null,7]
-```
-
-```java
-class Solution {
-    // 一个树为空，结果就是另一个树，否则合并值并递归合并子树 O(min(n1, n2)) O(min(n1, n2))
-    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
-        if (root1 == null) {
-            return root2;
-        }
-        if (root2 == null) {
-            return root1;
-        }
-        root1.val += root2.val;
-        root1.left = mergeTrees(root1.left, root2.left);
-        root1.right = mergeTrees(root1.right, root2.right);
-        return root1;
-    }
-}
-```
