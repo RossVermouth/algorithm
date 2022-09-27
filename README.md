@@ -100,6 +100,8 @@
 - [序列化与反序列化](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)
 - [前序中序构建二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.md)
 - [中序后序构建二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.md)
+- [二叉树展开为链表](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E4%B8%BA%E9%93%BE%E8%A1%A8.md)
+- [构建最大二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E6%9E%84%E5%BB%BA%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91.md)
 
 ## 图
 
