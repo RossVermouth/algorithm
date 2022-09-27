@@ -265,5 +265,52 @@ class Solution {
 }
 ```
 
+[129. 求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)
+
+```html
+输入：root = [1,2,3]
+输出：25
+解释：
+从根到叶子节点路径 1->2 代表数字 12
+从根到叶子节点路径 1->3 代表数字 13
+因此，数字总和 = 12 + 13 = 25
+```
+
+```java
+class Solution {
+    // 先求树的所有路径，再把所有路径转成数字求和即可 O(n) O(logn)/O(n) 
+    public int sumNumbers(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        List<String> paths = new ArrayList<>();
+        backtrace(root, "", paths);
+        int sum = 0;
+        for (String str: paths) {
+            sum += Integer.valueOf(str);
+        }
+        return sum;
+    }
+
+    private void backtrace(TreeNode root, String path, List<String> paths) {
+        path += root.val;
+        if (root.left == null && root.right == null) {
+            paths.add(path);
+            return;
+        }
+        if (root.left != null) {
+            backtrace(root.left, path, paths);
+        }
+        if (root.right != null) {
+            backtrace(root.right, path, paths);
+        }
+    }
+}
+```
+
+
+
+
+
 
 
