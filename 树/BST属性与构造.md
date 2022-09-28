@@ -98,9 +98,10 @@ class Solution {
 
 你需要在 BST 中找到节点值等于 val 的节点。 返回以该节点为根的子树。 如果节点不存在，则返回 null 。  
 
+- 递归法
 ```java
 class Solution {
-    // 递归发，最基本的二分思想 O(logn)/O(n) O(logn)/O(n)
+    // 递归法，最基本的二分思想 O(logn)/O(n) O(logn)/O(n)
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return null;
@@ -115,7 +116,7 @@ class Solution {
     }
 }
 ```
-
+- 迭代法
 ```java
 class Solution {
     // 最基本的二分思想 O(logn)/O(n) O(1)
