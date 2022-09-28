@@ -100,7 +100,7 @@ class Solution {
 
 ```java
 class Solution {
-    // 最基本的二分思想 O(logn)/O(n) O(logn)/O(n)
+    // 递归发，最基本的二分思想 O(logn)/O(n) O(logn)/O(n)
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return null;
@@ -112,6 +112,28 @@ class Solution {
             return searchBST(root.left, val);
         }
         return root;
+    }
+}
+```
+
+```java
+class Solution {
+    // 最基本的二分思想 O(logn)/O(n) O(1)
+    public TreeNode searchBST(TreeNode root, int val) {
+        if (root == null) {
+            return null;
+        }
+        TreeNode p = root;
+        while (p != null) {
+            if (p.val < val) {
+                p = p.right;
+            } else if (p .val > val) {
+                p = p.left;
+            } else {
+                return p;
+            }
+        }
+        return null;
     }
 }
 ```
