@@ -384,6 +384,85 @@ class Solution {
 }
 ```
 
+#### 题目7
+
+[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)  
+
+使用有序数组构建高度平衡的二叉搜索树。返回一种可行结果。  
+
+使用数组中点作为根，左侧序列递归构建左子树，右侧序列递归右子树即可。  
+
+从BST角度而言：每次以中点作为根，其左侧值都小于中点值，中点值都小于右侧值正好符合BST的左子树值小于根节点值小于右子树值特性。  
+从平衡树角度而言：每次都使左右子树的元素数目都最为相近，使用相同策略构建出的树高也最为相近（贪心）。
+
+```java
+class Solution {
+    // O(n) O(logn)
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+        return sortedArrayToBST(nums, 0, nums.length - 1);
+    }
+
+    private TreeNode sortedArrayToBST(int[] nums, int L, int R) {
+        if (L > R) {
+            return null;
+        }
+        if (L == R) {
+            return new TreeNode(nums[L]);
+        }
+        int mid = L + ((R - L) >> 1);
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = sortedArrayToBST(nums, L, mid - 1);
+        root.right = sortedArrayToBST(nums, mid + 1, R);
+        return root;
+    }
+}
+```
+
+#### 题目8
+
+[109. 将有序链表转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/)  
+
+使用有序链表构建高度平衡的二叉搜索树。返回一种可行结果。  
+
+- 解法一.推荐将链表转为数组再求解，时间 O(n) ， 空间 O(n) 
+- 解法二.直接对链表操作，求链表中点并分割链表，时间 O(nlogn) ， 空间 O(logn)
+
+```java
+class Solution {
+    // 每次使用链表中点元素创建树的根，使用前半部分创建左子树，右半部分创建右子树
+    // 为了分割出左子树对应链表，实际找的是中点前驱 
+    public TreeNode sortedListToBST(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return new TreeNode(head.val);
+        }
+        ListNode slow = head;
+        ListNode fast = head.next.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        TreeNode root = new TreeNode(slow.next.val);
+        ListNode rightHead = slow.next.next;
+        slow.next = null;
+        root.left = sortedListToBST(head);
+        root.right = sortedListToBST(rightHead);
+        return root;
+    }
+}
+```
+
+
+
+
+
+
+
 
 
 
