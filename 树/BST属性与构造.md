@@ -139,3 +139,69 @@ class Solution {
 }
 ```
 
+#### 题目2
+
+[230. 二叉搜索树中第K小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)  
+
+给定一个二叉搜索树的根节点 root ，和一个整数 k ，请你设计一个算法查找其中第 k 个最小元素（从 1 开始计数）。  
+
+树中的节点数为 n   
+1 <= k <= n <= 104  
+0 <= Node.val <= 104  
+
+- 迭代法  
+使用中序遍历搜索结点，查找到第 k 个就返回。
+
+```java
+class Solution {
+    // 中序遍历找到第k个元素，递归必须有出口，null时返回一个占位元素意味没有找到结果
+    // 去左子树寻找，找到结果返回，否则判断根是否是第k个元素，是的话返回，否则返回右子树结果
+    int count = 0;
+    public int kthSmallest(TreeNode root, int k) {
+        if (root == null) {
+            return -1;
+        }
+        int res = kthSmallest(root.left, k);
+        if (res >= 0) {
+            return res;
+        }
+        count++;
+        if (count == k) {
+            return root.val;
+        }
+        return kthSmallest(root.right, k);
+    }
+}
+```
+
+- 二分法  
+在 root 为根的树中查找第 k 小的元素，先求左子树中的结点数 n :  
+如果 n >= k ，去左子树找第 k 小元素；  
+否则如果 n + 1 == k ， root.val 即为结果；  
+否则去右子树中找第 n - k - 1 小的元素。  
+
+```java
+class Solution {
+    // 二分法 T(n) = T(n / 2) + O(n) => 时间O(n) 空间O(logn)
+    public int kthSmallest(TreeNode root, int k) {
+        int n = getNodeCount(root.left);
+        if (n >= k) {
+            return kthSmallest(root.left, k);
+        } else if (n + 1 == k) {
+            return root.val;
+        } else {
+            return kthSmallest(root.right, k - n - 1);
+        }
+    }
+
+    private int getNodeCount(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return getNodeCount(root.left) + getNodeCount(root.right) + 1;
+    }
+}
+```
+
+
+
