@@ -293,7 +293,37 @@ class Solution {
 }
 ```
 
+#### 题目5
 
+[669. 修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree/)  
+
+给你BST root 和区间 [low， high] ，将树 trim 到这个区间并保留原结点的相对位置关系。  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/trimTree.png)  
+```html
+输入：root = [3,0,4,null,2,null,null,1], low = 1, high = 3
+输出：[3,2,null,1]
+```
+
+```java
+class Solution {
+    // O(logn)/O(n) O(logn)/O(n)
+    public TreeNode trimBST(TreeNode root, int low, int high) {
+        if (root == null) {
+            return null;
+        }
+        if (root.val < low) {
+            return trimBST(root.right, low, high);
+        }
+        if (root.val > high) {
+            return trimBST(root.left, low, high);
+        }
+        root.left = trimBST(root.left, low, high);
+        root.right = trimBST(root.right, low, high);
+        return root;
+    }
+}
+```
 
 
 
