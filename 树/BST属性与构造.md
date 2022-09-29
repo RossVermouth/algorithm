@@ -325,5 +325,36 @@ class Solution {
 }
 ```
 
+#### 题目6
+
+[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)  
+
+在 BST 中找两节点 p 、 q 的最近公共最先。   
+
+最近公共最先指的是所有祖先中深度最大的。   
+
+如果 p q 都在右子树中，去右子树中找；  
+如果 p q 都在左子树中，去左子树中找；  
+否则 root 即为最近公祖。  
+
+```java
+class Solution {
+    // O(logn)/O(n) O(1)（尾递归）
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.val > root.val && q.val > root.val) {
+            return lowestCommonAncestor(root.right, p, q);
+        }
+        if (p.val < root.val && q.val < root.val) {
+            return lowestCommonAncestor(root.left, p, q);
+        }
+        return root;
+    }
+}
+```
+
+
+
+
+
 
 
