@@ -89,6 +89,38 @@ class Solution {
 }
 ```
 
+#### 题目3
+
+[538. 把二叉搜索树转换为累加树](https://leetcode.cn/problems/convert-bst-to-greater-tree/)  
+
+给出二叉搜索树的根节点，该树的节点值各不相同，请你将其转换为累加树（Greater Sum Tree），使每个节点 node 的新值等于原树中大于或等于 node.val 的值之和。  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E7%B4%AF%E5%8A%A0%E6%A0%91.png)
+```html
+输入：[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
+输出：[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
+```
+
+```java
+class Solution {
+    // 使用逆中序根右左遍历，每个节点赋值为当前节点值+前驱节点值即可
+    // O(n) O(logn)/O(n)
+    TreeNode prev = null;
+    public TreeNode convertBST(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        convertBST(root.right);
+        if (prev != null) {
+            root.val += prev.val;
+        }
+        prev = root;
+        convertBST(root.left);
+        return root;
+    }
+}
+```
+
 ## 二分搜索类
 
 #### 题目1
