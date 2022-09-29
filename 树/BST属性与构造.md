@@ -203,5 +203,35 @@ class Solution {
 }
 ```
 
+#### 题目3
+
+[701. 二叉搜索树中的插入操作](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)  
+
+给定 root ， val ， 将 val 插入到树中。   
+
+所有值 Node.val 是 独一无二 的。  
+保证 val 在原始BST中不存在。  
+
+```java
+class Solution {
+    // 将val拆入到root为根的子树中并返回新树的根 O(logn)/O(n) O(logn)/O(n) 
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        if (root == null) {
+            return new TreeNode(val);
+        }
+        if (root.val < val) {
+            root.right = insertIntoBST(root.right, val);
+        } else if (root.val > val) {
+            root.left = insertIntoBST(root.left, val);
+        }
+        return root;
+    }
+}
+```
+
+
+
+
+
 
 
