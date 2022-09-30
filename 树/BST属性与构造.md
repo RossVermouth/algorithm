@@ -457,6 +457,51 @@ class Solution {
 }
 ```
 
+#### 题目9
+
+[1382. 将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/)  
+
+```java
+class Solution {
+    // 将BST先中序遍历得有序序列，再贪心构造平衡树 O(n) O(n)
+    public TreeNode balanceBST(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        List<Integer> list = new ArrayList<>();
+        inOrder(root, list);
+        int[] nums = new int[list.size()];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = list.get(i);
+        }
+        return buildBalanceTree(nums, 0, nums.length - 1);
+    }
+
+    private void inOrder(TreeNode root, List<Integer> list) {
+        if (root == null) {
+            return;
+        }
+        inOrder(root.left, list);
+        list.add(root.val);
+        inOrder(root.right, list);
+    }
+
+    private TreeNode buildBalanceTree(int[] nums, int L, int R) {
+        if (L > R) {
+            return null;
+        }
+        if (L == R) {
+            return new TreeNode(nums[L]);
+        }
+        int mid = L + ((R - L) >> 1);
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = buildBalanceTree(nums, L, mid - 1);
+        root.right = buildBalanceTree(nums, mid + 1, R);
+        return root;
+    }
+}
+```
+
 
 
 
