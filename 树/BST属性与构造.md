@@ -157,10 +157,37 @@ class Solution {
     }
 }
 ```
+**扩展：普通二叉树的中序后继呢？**  
+当给定结点右子树存在时，右子树的最左侧结点即为结果；  
+否则向根回溯，找到一个结点 p ，要么 p 的父亲为空要么 p 是其父亲的左孩子，p的父亲即为结果  
+
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E5%90%8E%E7%BB%A7.png)
+
+```java
+class Solution {
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        if (root == null) {
+            return null;
+        }
+        if (p.right != null) {
+            TreeNode q = p.right;
+            while (q.left != null) {
+                q = q.left;
+            }
+            return q;
+        }
+        TreeNode q = p;
+        while (q.father != null && q.father.left != q) {
+            q = q.father;
+        }
+        return q.father;
+    }
+}
+```
 
 ## 二分搜索类
 
-#### 题目1
+#### 题目1  
 [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/)  
 
 给定二叉搜索树（BST）的根节点 root 和一个整数值 val。  
