@@ -274,13 +274,7 @@ val 可能并不在树中存在。
 如果树为空，则直接返回 null ；  
 如果 val > root.val ， 去右子树中删除，并把新的右子树的根挂在 root.right 下，返回 root ；  
 否则如果 val < root.val ， 去左子树中删除，并把新的左子树的根挂在 root.left 下，返回 root;  
-否则说明要删除的就是 root 。  
-
-在 BST 中删除 root 的具体算法为：  
-如果 root 为空， 直接返回空；  
-如果 root.left 为空， root.right 即为删除后的树的根；  
-如果 root.right 为空， root.left 即为删除后的树的根；  
-否则找到右子树中的最小结点，将其在右子树中删除，并将原树的左右子树挂在该结点的左右链接下，该结点即为新树的根。  
+否则说明要删除的就是 root，直接将左子树挂在右子树的最左侧结点左连接即可（或者将右子树挂在左子树的最右侧结点右链接即可）。
 
 ![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/bst%E5%88%A0%E9%99%A4.png)
 
@@ -297,28 +291,16 @@ class Solution {
         } else if (root.val > key) {
             root.left = deleteNode(root.left, key);
         } else {
-            if (root.left == null) {
-                return root.right;
-            }
+            // 将左子树挂在右子树最左侧结点的左链接下即可
             if (root.right == null) {
                 return root.left;
             }
             TreeNode p = root.right;
-            if (p.left == null) {
-                p.left = root.left;
-                return p;
-            }
-            // 找到右子树中最左侧节点, 将其从右子树中删除
-            while (p.left != null && p.left.left != null) {
+            while (p.left != null) {
                 p = p.left;
             }
-            TreeNode q = p.left;
-            // 重大bug点,删除这个结点时,需要保留该节点的右子树
-            p.left = q.right;
-            // 将原root的左右子树挂在原右子树最左侧节点的左右连接下
-            q.left = root.left;
-            q.right = root.right;
-            return q;
+            p.left = root.left;
+            return root.right;
         }
         return root;
     }
