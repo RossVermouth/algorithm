@@ -121,6 +121,43 @@ class Solution {
 }
 ```
 
+#### 题目4
+
+[剑指 Offer II 053. 二叉搜索树中的中序后继](https://leetcode.cn/problems/P5rCT8/)  
+
+给定一棵二叉搜索树和其中的一个节点 p ，找到该节点在树中的中序后继。如果节点没有中序后继，请返回 null 。  
+
+节点 p 的后继是值比 p.val 大的节点中键值最小的节点，即按中序遍历的顺序节点 p 的下一个节点。  
+
+```html
+输入：root = [2,1,3], p = 1
+输出：2
+解释：这里 1 的中序后继是 2。请注意 p 和返回值都应是 TreeNode 类型。
+```
+
+先去左子树中找，找得到返回结果，找不到去 root 找， 找到返回结果，找不到去右子树找。
+
+```java
+class Solution {
+    TreeNode prev = null;
+    // O(l) (l是找得到p遍历结点数)  O(logn)/O(n)
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        if (root == null) {
+            return null;
+        }
+        TreeNode res = inorderSuccessor(root.left, p);
+        if (res != null) {
+            return res;
+        }
+        if (prev == p) {
+            return root;
+        }
+        prev = root;
+        return inorderSuccessor(root.right, p);
+    }
+}
+```
+
 ## 二分搜索类
 
 #### 题目1
