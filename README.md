@@ -104,8 +104,9 @@
 - [构建最大二叉树](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E6%9E%84%E5%BB%BA%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91.md)
 - [BST属性与构造](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/BST%E5%B1%9E%E6%80%A7%E4%B8%8E%E6%9E%84%E9%80%A0.md)
 - [二叉树的最近公共祖先](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.md)
-- [二叉树的最大路径和](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E8%B7%AF%E5%BE%84%E5%92%8C.md)
 - [二叉树的最大路径长](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84.md)
+- [二叉树的最大路径和](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E8%B7%AF%E5%BE%84%E5%92%8C.md)
+
 
 ## 图
 
