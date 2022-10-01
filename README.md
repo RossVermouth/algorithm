@@ -92,7 +92,7 @@
 
 ## 树
 
-- [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E6%A0%91.png)
+- [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
 - [二叉树遍历模板](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E6%A8%A1%E6%9D%BF.md)
 - [多叉树遍历模板](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/%E5%A4%9A%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E6%A8%A1%E6%9D%BF.md)
 - [dfs基础专项（左叶子、翻转与合并、相同与对称、判断平衡与BST等](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%91/dfs%E5%9F%BA%E7%A1%80%E4%B8%93%E9%A1%B9%EF%BC%88%E5%B7%A6%E5%8F%B6%E5%AD%90%E3%80%81%E7%BF%BB%E8%BD%AC%E3%80%81%E5%AF%B9%E7%A7%B0%E3%80%81%E5%90%88%E5%B9%B6%E3%80%81%E5%B9%B3%E8%A1%A1orBST%E7%AD%89%EF%BC%89.md)
