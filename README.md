@@ -121,6 +121,13 @@
 
 ## 回溯
 
+- [组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%BB%84%E5%90%88.md)
+- [去重组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E7%BB%84%E5%90%88.md)
+- [元素数为k的组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/k%E4%B8%AA%E6%95%B0%E7%BB%84%E5%90%88.md)
+- [元素和为target的组合（元素可以重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88%EF%BC%88%E5%85%83%E7%B4%A0%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%EF%BC%89.md)
+- [元素和为target的组合（元素不可重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88(%E5%85%83%E7%B4%A0%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8).md)
+- [元素数为k且元素和为target的组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E4%B8%94%E5%85%83%E7%B4%A0%E6%95%B0%E4%B8%BAk%E7%9A%84%E7%BB%84%E5%90%88.md)
+
 ## 动态规划
 
 ## 排序
