@@ -127,6 +127,8 @@
 - [元素和为target的组合（元素可以重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88%EF%BC%88%E5%85%83%E7%B4%A0%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%EF%BC%89.md)
 - [元素和为target的组合（元素不可重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88(%E5%85%83%E7%B4%A0%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8).md)
 - [元素数为k且元素和为target的组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E4%B8%94%E5%85%83%E7%B4%A0%E6%95%B0%E4%B8%BAk%E7%9A%84%E7%BB%84%E5%90%88.md)
+- [递增子序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
+- [电话号码的字母组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.md)
 
 ## 动态规划
 
