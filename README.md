@@ -130,6 +130,8 @@
 - [递增子序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
 - [电话号码的字母组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.md)
 - [删除无效括号](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%A0%E9%99%A4%E6%97%A0%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.md)
+- [排列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E6%8E%92%E5%88%97.md)
+- [去重排列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E6%8E%92%E5%88%97.md)
 
 ## 动态规划
 
