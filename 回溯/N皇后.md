@@ -14,8 +14,8 @@
 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
 ```
 
-## 解题思路
-- 回溯树
+## 解题思路  
+- 回溯树  
 ![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E7%9A%87%E5%90%8E%E5%9B%9E%E6%BA%AF%E6%A0%91.png)
 - 状态机(重点，可替代回溯树)
 ![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/N%E7%9A%87%E5%90%8E%E7%8A%B6%E6%80%81%E6%9C%BA.png)
