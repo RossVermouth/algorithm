@@ -26,6 +26,7 @@
 
 ```JAVA
 class Solution {
+    // O(n!) O(n)
     public List<List<String>> solveNQueens(int n) {
         char[][] grid = new char[n][n];
         for (int i = 0; i < n; i++) {
