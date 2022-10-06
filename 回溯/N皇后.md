@@ -1,6 +1,6 @@
 ## 题目链接
 
-[leetcode 51](https://leetcode.cn/problems/n-queens/)
+[leetcode 51](https://leetcode.cn/problems/n-queens/)  
 [leetcode 52](https://leetcode.cn/problems/n-queens-ii/)
 
 ## 题目描述
@@ -16,7 +16,9 @@
 
 ## 解题思路
 - 回溯树
-
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/%E7%9A%87%E5%90%8E%E5%9B%9E%E6%BA%AF%E6%A0%91.png)
+- 状态机(重点，可替代回溯树)
+![](https://github.com/RossVermouth/algorithm/blob/main/%E9%99%84%E4%BB%B6/N%E7%9A%87%E5%90%8E%E7%8A%B6%E6%80%81%E6%9C%BA.png)
 - 何时收集结果: 没有待填充皇后的行时
 - 何时剪枝（提前终止）：当前行所挑选的列放置皇后会与已放置皇后冲突时
 - 是否需要去重：棋盘问题，结点取值与位置绑定，天然不同
