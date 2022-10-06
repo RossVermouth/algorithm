@@ -134,6 +134,9 @@
 - [去重排列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E6%8E%92%E5%88%97.md)
 - [分割回文串](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.md)
 - [分割有效ip](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%86%E5%89%B2%E6%9C%89%E6%95%88ip.md)
+- [N皇后](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/N%E7%9A%87%E5%90%8E.md)
+- [有效的数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E6%9C%89%E6%95%88%E7%9A%84%E6%95%B0%E7%8B%AC.md)
+- [解数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC.md)
 
 ## 动态规划
 
