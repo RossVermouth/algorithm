@@ -122,21 +122,22 @@
 ## 回溯
 
 - [组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%BB%84%E5%90%88.md)
-- [去重组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E7%BB%84%E5%90%88.md)
+- [去重组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E7%BB%84%E5%90%88%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 - [元素数为k的组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/k%E4%B8%AA%E6%95%B0%E7%BB%84%E5%90%88.md)
 - [元素和为target的组合（元素可以重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88%EF%BC%88%E5%85%83%E7%B4%A0%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%EF%BC%89.md)
 - [元素和为target的组合（元素不可重复使用）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E7%9A%84%E7%BB%84%E5%90%88(%E5%85%83%E7%B4%A0%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8).md)
-- [元素数为k且元素和为target的组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E4%B8%94%E5%85%83%E7%B4%A0%E6%95%B0%E4%B8%BAk%E7%9A%84%E7%BB%84%E5%90%88.md)
+- [元素数为k且元素和为target的组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%92%8C%E4%B8%BAtarget%E4%B8%94%E5%85%83%E7%B4%A0%E6%95%B0%E4%B8%BAk%E7%9A%84%E7%BB%84%E5%90%88%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 - [递增子序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
 - [电话号码的字母组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.md)
 - [删除无效括号](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%A0%E9%99%A4%E6%97%A0%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.md)
 - [排列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E6%8E%92%E5%88%97.md)
-- [去重排列](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E6%8E%92%E5%88%97.md)
-- [分割回文串](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.md)
+- [去重排列（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E6%8E%92%E5%88%97%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
+- [分割回文串（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 - [分割有效ip](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%88%86%E5%89%B2%E6%9C%89%E6%95%88ip.md)
 - [N皇后](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/N%E7%9A%87%E5%90%8E.md)
 - [有效的数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E6%9C%89%E6%95%88%E7%9A%84%E6%95%B0%E7%8B%AC.md)
 - [解数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC.md)
+- [单词搜索（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 
 ## 动态规划
 
