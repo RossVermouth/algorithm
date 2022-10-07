@@ -121,6 +121,7 @@
 
 ## 回溯
 
+- [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
 - [组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E7%BB%84%E5%90%88.md)
 - [去重组合（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8E%BB%E9%87%8D%E7%BB%84%E5%90%88%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 - [元素数为k的组合](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/k%E4%B8%AA%E6%95%B0%E7%BB%84%E5%90%88.md)
