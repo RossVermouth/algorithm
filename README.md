@@ -147,6 +147,10 @@
 - [使用最小代价爬楼梯](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E4%BB%A3%E4%BB%B7%E7%88%AC%E6%A5%BC%E6%A2%AF.md)
 - [不同路径1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%841.md)
 - [不同路径2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%842.md)
+- [不同BST个数](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E7%9A%84BST%E4%B8%AA%E6%95%B0.md)
+- [整数拆分](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86.md)
+- [完全平方数拆分](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0%E6%8B%86%E5%88%86.md)
+- [单次拆分](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8D%95%E6%AC%A1%E6%8B%86%E5%88%86.md)
 - [打家劫舍1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D1.md)
 - [打家劫舍2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D2.md)
 
