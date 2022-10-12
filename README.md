@@ -153,6 +153,7 @@
 - [单次拆分](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8D%95%E6%AC%A1%E6%8B%86%E5%88%86.md)
 - [打家劫舍1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D1.md)
 - [打家劫舍2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D2.md)
+- [买卖股票(不限次数类)](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8(%E4%B8%8D%E9%99%90%E6%AC%A1%E6%95%B0%E7%B1%BB).md)
 
 ## 排序
 
