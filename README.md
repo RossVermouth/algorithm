@@ -155,6 +155,7 @@
 - [打家劫舍2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D2.md)
 - [买卖股票(不限次数类)](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8(%E4%B8%8D%E9%99%90%E6%AC%A1%E6%95%B0%E7%B1%BB).md)
 - [买卖股票(限定次数类)](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8(%E9%99%90%E5%AE%9A%E6%AC%A1%E6%95%B0%E7%B1%BB).md)
+- [最大子数组和](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
 - [最长递增子数组](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
 - [最长递增子序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
 - [最长公共子数组](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E6%95%B0%E7%BB%84(%E8%BF%9E%E7%BB%AD%E5%AD%90%E5%BA%8F%E5%88%97).md)
