@@ -163,6 +163,7 @@
 - [最长公共子序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97.md)
 - [不相交的直线数](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E7%9B%B4%E7%BA%BF%E6%95%B0.md)
 - [编辑距离](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md)
+- [串s中子序列为串t的个数](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%B2s%E4%B8%AD%E5%AD%90%E5%BA%8F%E5%88%97%E4%B8%BA%E4%B8%B2t%E7%9A%84%E4%B8%AA%E6%95%B0.md)
 
 ## 排序
 
