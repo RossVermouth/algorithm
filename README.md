@@ -162,6 +162,7 @@
 - [背包问题模板](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E6%A8%A1%E6%9D%BF.md)
 - [分割等和子集](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.md)
 - [磕石头](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%A3%95%E7%9F%B3%E5%A4%B4.md)
+- [目标和](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%9B%AE%E6%A0%87%E5%92%8C.md)
 - [最大子数组和](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
 - [最大子数组积](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E7%A7%AF.md)
 - [最长递增子数组](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
