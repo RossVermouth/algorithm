@@ -164,6 +164,8 @@
 - [磕石头](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%A3%95%E7%9F%B3%E5%A4%B4.md)
 - [目标和](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%9B%AE%E6%A0%87%E5%92%8C.md)
 - [一和零](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%80%E5%92%8C%E9%9B%B6.md)
+- [零钱兑换最少硬币数](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%E6%9C%80%E5%B0%91%E7%A1%AC%E5%B8%81%E6%95%B0.md)
+- [零钱兑换组合数](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%E7%BB%84%E5%90%88%E6%95%B0.md)
 - [最大子数组和](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
 - [最大子数组积](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E7%A7%AF.md)
 - [最长递增子数组](https://github.com/RossVermouth/algorithm/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.md)
