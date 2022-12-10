@@ -88,6 +88,7 @@
 - [有效的括号](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.md)
 - [删除字符串中所有重复字符](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6.md)
 - [逆波兰表达式求值](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC.md)
+- [磕石头](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E7%A3%95%E7%9F%B3%E5%A4%B4.md)
 - [前k个高频元素](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E5%89%8Dk%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.md)
 - [数据流的中位数](https://github.com/RossVermouth/algorithm/blob/main/%E6%A0%88%E3%80%81%E9%98%9F%E5%88%97%E4%B8%8E%E5%A0%86/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0.md)
 
