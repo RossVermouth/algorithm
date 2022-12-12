@@ -24,6 +24,7 @@
 - [数组中重复的元素](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E5%85%83%E7%B4%A0.md)
 - [下一个排列](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md)
 - [Z字形变换](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/Z%E5%AD%97%E5%BD%A2%E5%8F%98%E6%8D%A2.md)
+- [接雨水](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E7%BB%84/%E6%8E%A5%E9%9B%A8%E6%B0%B4.md)
 
 ## 链表
 - [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E9%93%BE%E8%A1%A8/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
