@@ -188,9 +188,9 @@
 - [排序总结](https://github.com/RossVermouth/algorithm/blob/main/%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E6%80%BB%E7%BB%93.md)
 
 ## 单调栈与单调队列
-- [每日温度](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88%E4%B8%8E%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
-- [下一个更大元素1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88%E4%B8%8E%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A01.md)
-- [下一个更大元素2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88%E4%B8%8E%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A02.md)
+- [每日温度](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
+- [下一个更大元素1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A01.md)
+- [下一个更大元素2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A02.md)
 
 ## 滑动窗口
 
