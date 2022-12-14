@@ -191,6 +191,7 @@
 - [每日温度](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
 - [下一个更大元素1](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A01.md)
 - [下一个更大元素2](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A02.md)
+- [柱状图中的最大矩形](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2.md)
 
 ## 滑动窗口
 
