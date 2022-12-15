@@ -197,6 +197,7 @@
 - [滑动窗口的最大值](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 
 ## 设计
+- [LRU缓存](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/LRU%E7%BC%93%E5%AD%98.md)
 #### 并查集
 #### 缓存
 #### 前缀树
