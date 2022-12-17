@@ -194,6 +194,7 @@
 - [柱状图中的最大矩形](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2.md)
 
 ## 滑动窗口
+- [和至少为k的连续子数组](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E5%92%8C%E8%87%B3%E5%B0%91%E4%B8%BAk%E7%9A%84%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [滑动窗口的最大值](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 
 ## 设计
