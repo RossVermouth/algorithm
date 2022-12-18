@@ -194,6 +194,7 @@
 - [柱状图中的最大矩形](https://github.com/RossVermouth/algorithm/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2.md)
 
 ## 滑动窗口
+- [知识导航](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E7%9F%A5%E8%AF%86%E5%AF%BC%E8%88%AA.md)
 - [和至少为k的连续子数组](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E5%92%8C%E8%87%B3%E5%B0%91%E4%B8%BAk%E7%9A%84%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [无重复字符的最长子串](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2.md)
 - [最小覆盖子串](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.md)
