@@ -217,6 +217,8 @@
 
 ## 数学类
 
+- [pow(x, n)](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E5%AD%A6/pow(x%2C%20n).md)
+
 ## 贪心
 
 
