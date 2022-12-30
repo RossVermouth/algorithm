@@ -202,6 +202,7 @@
 - [滑动窗口的最大值](https://github.com/RossVermouth/algorithm/blob/main/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 
 ## 设计
+- [岛屿数量](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F.md)
 - [LRU缓存](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/LRU%E7%BC%93%E5%AD%98.md)
 - [前缀树](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E5%89%8D%E7%BC%80%E6%A0%91.md)
 - [大顶堆](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E5%A4%A7%E9%A1%B6%E5%A0%86.md)
