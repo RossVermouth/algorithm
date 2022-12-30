@@ -59,6 +59,7 @@
 - [字母异位词分组](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84.md)
 - [赎金信](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%B5%8E%E9%87%91%E4%BF%A1.md)
 - [四数相加2](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A02.md)
+- [最长连续序列](https://github.com/RossVermouth/algorithm/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97.md)
 
 ## 字符串
 
