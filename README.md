@@ -143,7 +143,7 @@
 - [N皇后](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/N%E7%9A%87%E5%90%8E.md)
 - [有效的数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E6%9C%89%E6%95%88%E7%9A%84%E6%95%B0%E7%8B%AC.md)
 - [解数独](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC.md)
-- [单词搜索（模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
+- [单词搜索（矩阵回溯模板）](https://github.com/RossVermouth/algorithm/blob/main/%E5%9B%9E%E6%BA%AF/%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89.md)
 
 ## 动态规划
 
