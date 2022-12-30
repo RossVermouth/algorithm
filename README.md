@@ -205,6 +205,8 @@
 - [LRU缓存](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/LRU%E7%BC%93%E5%AD%98.md)
 - [前缀树](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E5%89%8D%E7%BC%80%E6%A0%91.md)
 - [大顶堆](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E5%A4%A7%E9%A1%B6%E5%A0%86.md)
+- [扁平化嵌套列表迭代器](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E6%89%81%E5%B9%B3%E5%8C%96%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%E8%BF%AD%E4%BB%A3%E5%99%A8.md)
+- [二叉树中序遍历迭代器](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E8%BF%AD%E4%BB%A3%E5%99%A8.md)
 #### 并查集
 #### 缓存
 #### 前缀树
