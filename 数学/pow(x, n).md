@@ -41,17 +41,17 @@ class Solution {
         if (Math.abs(x) < 1e-6) {
             return 0.0;
         }
-        return n >= 0 ? myPowWithPositive(x, n) : 1.0 / myPowWithPositive(x, -n);
+        return n >= 0 ? quickPow(x, n) : 1.0 / quickPow(x, -n);
     }
-    // x != 0 n >= 0 快速幂模版
-    private double myPowWithPositive(double x, long n) {
+    // x != 0.0 且 n >= 0 走快速幂模版
+    private double quickPow(double x, long n) {
         if (n == 0) {
             return 1.0;
         }
         if (n == 1) {
             return x;
         }
-        double halfPow = myPowWithPositive(x, n / 2);
+        double halfPow = quickPow(x, n / 2);
         return n % 2 == 0 ? halfPow * halfPow : x * halfPow * halfPow;
     }
 }
