@@ -218,6 +218,8 @@
 ## 数学类
 
 - [pow(x, n)](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E5%AD%A6/pow(x%2C%20n).md)
+- [rand7实现rand10](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E5%AD%A6/rand7%E5%AE%9E%E7%8E%B0rand10.md)
+- [对抗游戏](https://github.com/RossVermouth/algorithm/blob/main/%E6%95%B0%E5%AD%A6/nim%E6%B8%B8%E6%88%8F.md)
 
 ## 贪心
 
