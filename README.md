@@ -214,6 +214,7 @@
 ## 位运算
 
 ## 前缀和
+- [除自身外数组元素的乘积](https://github.com/RossVermouth/algorithm/blob/main/%E5%89%8D%E7%BC%80%E5%92%8C/%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF.md)
 
 ## 数学类
 
