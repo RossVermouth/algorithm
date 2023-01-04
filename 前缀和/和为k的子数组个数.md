@@ -14,6 +14,8 @@
 
 ## 解题思路
 
+和为k的题目，因为 nums[i] 有正有负，无法单调收缩窗口，故不能使用滑动窗口，应该使用前缀和。  
+
 prefix[i] = nums[0] + ... + nums[i]  
 
 prefix[i] = (prefix[i] - k) + k  
