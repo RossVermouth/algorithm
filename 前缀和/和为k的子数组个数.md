@@ -21,6 +21,8 @@ prefix[i] = nums[0] + ... + nums[i]
 prefix[i] = (prefix[i] - k) + k  
 
 即以 nums[i] 结尾的和为 k 的连续子数组个数 等于 在 nums[i] 及其之前，以 prefix[i] - k 作为前缀和的子数组个数  
+
+**如果题目换成求子序列的个数，那应该考虑回溯或者背包。**
  
 ```JAVA
 class Solution {
