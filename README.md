@@ -212,6 +212,9 @@
 - [二叉树中序遍历迭代器](https://github.com/RossVermouth/algorithm/blob/main/%E8%AE%BE%E8%AE%A1/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E8%BF%AD%E4%BB%A3%E5%99%A8.md)
 
 ## 位运算
+- [只出现一次的数字](https://github.com/RossVermouth/algorithm/blob/main/%E4%BD%8D%E8%BF%90%E7%AE%97/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97.md)
+- [二进制中1的个数](https://github.com/RossVermouth/algorithm/blob/main/%E4%BD%8D%E8%BF%90%E7%AE%97/%E4%BA%8C%E8%BF%9B%E5%88%B61%E7%9A%84%E6%95%B0%E7%9B%AE.md)
+- [2的幂与4的幂](https://github.com/RossVermouth/algorithm/blob/main/%E4%BD%8D%E8%BF%90%E7%AE%97/2%E7%9A%84%E5%B9%82%E4%B8%8E4%E7%9A%84%E5%B9%82.md)
 
 ## 前缀和
 - [除自身外数组元素的乘积](https://github.com/RossVermouth/algorithm/blob/main/%E5%89%8D%E7%BC%80%E5%92%8C/%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF.md)
