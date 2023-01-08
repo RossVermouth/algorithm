@@ -229,5 +229,5 @@
 
 ## 贪心
 
-
+- [合并区间](https://github.com/RossVermouth/algorithm/blob/main/%E8%B4%AA%E5%BF%83/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4.md)
 
