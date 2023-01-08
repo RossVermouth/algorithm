@@ -231,4 +231,6 @@
 
 - [合并区间](https://github.com/RossVermouth/algorithm/blob/main/%E8%B4%AA%E5%BF%83/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4.md)
 - [加油站](https://github.com/RossVermouth/algorithm/blob/main/%E8%B4%AA%E5%BF%83/%E5%8A%A0%E6%B2%B9%E7%AB%99.md)
+- [跳跃游戏1](https://github.com/RossVermouth/algorithm/blob/main/%E8%B4%AA%E5%BF%83/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F1.md)
+- [跳跃游戏2](https://github.com/RossVermouth/algorithm/blob/main/%E8%B4%AA%E5%BF%83/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F2.md)
 
