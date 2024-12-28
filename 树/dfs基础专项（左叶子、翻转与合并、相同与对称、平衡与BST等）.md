@@ -66,7 +66,7 @@ class Solution {
 
 ## 题目4
 
-[lc404.左叶子之和](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)  
+[lc404.左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves/description/)  
 
 给定二叉树的根节点 root ，返回所有左叶子之和。  
 
