@@ -26,9 +26,11 @@ class Solution {
         }
         if (root.left != null) {
             backtrace(root.left, path, paths);
+            path.removeLast();
         }
         if (root.right != null) {
             backtrace(root.right, path, paths);
+            path.removeLast();
         }
     }
 }
