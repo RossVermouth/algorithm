@@ -208,8 +208,8 @@ class Solution {
 
     private boolean backtrace(TreeNode root, int curSum, int targetSum) {
         curSum += root.val;
-        if (root.left == null && root.right == null) {
-            return curSum == targetSum;
+        if (root.left == null && root.right == null && curSum == targetSum) {
+            return true;
         }
         if (root.left != null) {
             if (backtrace(root.left, curSum, targetSum)) {
